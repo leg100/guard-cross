@@ -1,0 +1,6 @@
+{
+    "name": "Guard-Cross",
+    "description": "A simple Chrome Extension to add fun features to the Guardian Crossword site.",
+    "version": "0.1",
+    "manifest_version": 3
+  }
