@@ -1,4 +1,4 @@
 # Guard-Cross
 
-A simple Chrome Extension to add fun features to the Guardian Crossword site.
+A bookmarklet (soon to be Chrome Extension) to add fun features to the Guardian Crossword site.
 
