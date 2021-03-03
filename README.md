@@ -20,11 +20,10 @@
 
 #### Loading Manually
 
-- Head to the [latest release](https://github.com/LukeStorry/guard-cross/releases) and download the zip file.
-- Unzip the zip file.
+- Head to the [latest release](https://github.com/LukeStorry/guard-cross/releases) and download the zip file, or just download/clone this repository.
 - Then head over to the [Chrome Extenstions Page](chrome://extensions/)
 - Turn on Developer Mode
-- Click "Load unpacked" and select the directory you unzipped.
+- Click "Load unpacked" and select the directory you downloaded / unzipped.
 
 #### Chrome Web Store Extension
 
