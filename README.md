@@ -1,8 +1,10 @@
 # Guard-Cross
 
-A ~~bookmarklet~~  Chrome Extension to add fun features to the Guardian Crossword site.
+#### A ~~bookmarklet~~  Chrome Extension to add fun features to the Guardian Crossword site.
 
----
+
+![screenshot demo of buttons feature](demo.gif)
+
 
 ### Features
 - [x] provide next/previous/random buttons
