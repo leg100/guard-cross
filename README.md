@@ -1,6 +1,6 @@
 # Guard-Cross
 
-#### A ~~bookmarklet~~ Chrome Extension to add fun features to the Guardian Crossword site.
+#### A Chrome Extension to add fun features to the Guardian Crossword site.
 
 ---
 
@@ -14,7 +14,7 @@
 - [x] check all on space
 - [x] add timer
 - [x] confetti on completion
-- [ ] shortcut to today's crosswords
+- [x] shortcut to today's crosswords
 
 ### Installation
 
@@ -27,4 +27,4 @@
 
 #### Chrome Web Store Extension
 
-// TODO
+Currently submitted and in review.

@@ -6,7 +6,7 @@ const crosswordData = JSON.parse(crossword.dataset.crosswordData);
 const next = makeButton("Next", crosswordData.number + 1);
 const random = makeButton("Random", crosswordData.number - Math.floor(Math.random() * 2000));
 const previous = makeButton("Previous", crosswordData.number - 1);
-crossword.insertAdjacentHTML("beforebegin", next + random + previous);
+crossword.insertAdjacentHTML("beforebegin", previous + random + next);
 
 // start timer
 let startTime;
