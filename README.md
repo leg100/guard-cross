@@ -27,4 +27,4 @@
 
 #### Chrome Web Store Extension
 
-Currently submitted and in review.
+You can install the Chrome Extension from the store [here](https://chrome.google.com/webstore/detail/guard-cross/glomjfjembcojbdggejgcdkgfiejehgh)
