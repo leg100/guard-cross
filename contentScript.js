@@ -19,27 +19,42 @@ crossword.addEventListener("focusin", (event) => {
 const noEmpties = () => ![...document.querySelectorAll(".crossword__cell-text")].map((a) => a.innerHTML).includes("");
 
 function checkAll() {
-  const button = document.querySelector(".crossword__controls__grid > button:nth-child(1)");
+  const button = document.querySelector('button[data-link-name="Check all"]');
   button.click();
+}
+
+function checkThis() {
+  const button = document.querySelector('button[data-link-name="Check this"]');
   button.click();
 }
 
 function happyEnding() {
   if (noEmpties()) {
-    let timeTaken = Math.floor((new Date() - startTime) / 60000);
+    let now = new Date();
+    let ms = now - startTime;
+    let secs = Math.floor(ms / 1000);
+    let mins = Math.floor(secs / 60);
+    let andSeconds = secs % 60;
     alert(
-      `\n\n  🎉  🎉  🎉  🎉        Congratulations!         🎉  🎉  🎉  🎉\n\n                          That only took ${timeTaken} minutes! \n\n`
+      `\n\n  🎉  🎉  🎉  🎉        Congratulations!         🎉  🎉  🎉  🎉\n\n                          That only took ${mins} minutes and ${andSeconds} seconds! \n\n`
     );
   }
 }
 
-// spacebar checks, final entry checks and ends
 document.body.onkeyup = function (e) {
+  // spacebar checks current clue
   if (e.key == " ") {
-    checkAll();
+    checkThis();
   }
+  // ctrl-a checks all clues
+  if (e.ctrlKey && e.key == "a") {
+    checkAll();
+    setTimeout(checkAll, 100);
+  }
+  // auto checks all upon completion and show msg with completed time if all correct
   if (noEmpties()) {
-    setTimeout(checkAll, 400);
+    checkAll();
+    setTimeout(checkAll, 100);
     setTimeout(happyEnding, 600);
   }
 };
