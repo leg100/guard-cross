@@ -42,6 +42,10 @@ function happyEnding() {
 }
 
 document.body.onkeyup = function (e) {
+  // a-z keys check current clue
+  if (e.keyCode >= 65 && e.keyCode <= 90) {
+    checkThis();
+  }
   // spacebar checks current clue
   if (e.key == " ") {
     checkThis();
